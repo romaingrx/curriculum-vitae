@@ -52,6 +52,7 @@
 
 % some tex-live fonts - choose your own
 
+\usepackage{nth}
 %\usepackage[defaultsans]{droidsans}
 %\usepackage[default]{comfortaa}
 %\usepackage{cmbright}
@@ -180,7 +181,8 @@
 % \definecolor{accentcol}{RGB}{ 250, 150, 10 }
 
 % dark color
-\definecolor{darkcol}{RGB}{ 150, 150, 150 }
+% \definecolor{darkcol}{RGB}{ 245, 180, 180 }
+\definecolor{darkcol}{HTML}{777696}
 
 % light color
 \definecolor{lightcol}{RGB}{245,245,245}
@@ -305,7 +307,8 @@
 		\cvtext{\textbf{Achievements include:}}\\
 		{#7}
 	}
-	\vspace{14pt}
+	\vspace{10pt}
+	\vspace{10pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -328,7 +331,7 @@
 		\cvtext{{ \textcolor{darkcol} {#3} }}\\
 	}
 
-	\cvtext{#4}\\[14pt]
+	\cvtext{#4}\\[2pt]
 }
 
 %---------------------------------------------------------------------------------------
@@ -344,6 +347,11 @@
 }
 
 
+\newcommand{\makecolorbox}[1]{
+    \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}}
+}
+
+
 %============================================================================%
 %
 %
@@ -354,7 +362,8 @@
 %
 %============================================================================%
 \begin{document}
-\columnratio{0.31}
+% \columnratio{0.3}
+\columnratio{0.27}
 \setlength{\columnsep}{2.2em}
 \setlength{\columnseprule}{4pt}
 \colseprulecolor{lightcol}
@@ -368,34 +377,107 @@
 %---------------------------------------------------------------------------------------
 %	META SKILLS
 %----------------------------------------------------------------------------------------
-\cvsection{CONTACT}
+\cvsection{PERSONAL}
 	
-\iconhref{MapMarker}{12}{Buisson Ponsin 10,\\ 6800 Libramont-Chevigny,\\ Belgium}{https://www.openstreetmap.org/way/945440098\#map=18/49.90597/5.40513}{black}\\[6pt]
-\iconhref{MobilePhone}{12}{+32 498 07 43 45}{tel:+32498074345}{black}\\[6pt]
-\iconemail{Envelope}{12}{graux.romain@protonmail.com}{graux.romain@protonmail.com}{black}\\[6pt]
+\iconhref{BirthdayCake}{12}{14th August 1999}{}{black}\\[6pt]
+% \iconhref{MapMarker}{12}{Buisson Ponsin 10,\\ 6800 Libramont-Chevigny,\\ Belgium}{https://www.openstreetmap.org/way/945440098\#map=18/49.90597/5.40513}{black}\\[6pt]
+\iconhref{MapMarker}{12}{Route Neuve 3,\\1024 Ecublens (VD),\\Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
+\iconhref{MobilePhone}{12}{+41 78 231 14 77}{tel:+41782311477}{black}\\[6pt]
+% \iconemail{Envelope}{12}{graux.romain@protonmail.com}{graux.romain@protonmail.com}{black}\\[6pt]
+\iconemail{Envelope}{12}{romain.graux@epfl.ch}{romain.graux@epfl.ch}{black}\\[6pt]
 
-\vfill\null
-\cvsection{SKILLS}
 
-\cvskill{Python} {4+ yrs} {0.95} \\[-2pt]
-\cvskill{C/C++} {3+ yrs} {0.7} \\[-2pt]
-\cvskill{Linux} {3+ yrs} {0.6} \\[-2pt]
-\cvskill{GIT} {3+ yrs} {0.6} \\[-2pt]
-\cvskill{Vim} {2+ yrs} {0.6} \\[-2pt]
-
-\vfill\null
+% \vfill\null
 \cvsection{LINKS}
 
 \iconhref{Github}{12}{RomainGrx}{https://github.com/RomainGrx}{black}\\[6pt]
 \iconhref{Linkedin}{12}{romaingraux}{https://www.linkedin.com/in/romaingraux/}{black}\\[6pt]
 
+% \vfill\null
+\cvsection{LICENSES}
+
+\iconhref{Car}{12}{B, BE}{}{black}\\[6pt]
+\iconhref{Anchor}{12}{ICC (inland and coast, motor and sail)}{}{black}\\[6pt]
+
 \vfill\null
 \cvqrcode{}
 
 %---------------------------------------------------------------------------------------
-%	EDUCATION
+%	CERTIFICATION
 %----------------------------------------------------------------------------------------
 \newpage
+\vfill\null
+\cvsection{CERTIFICATIONS}
+
+\cvmetaevent
+{Jul 2020 - Jul 2023}
+{\href{https://www.credential.net/326a136c-9842-42ba-a96d-0786c3dba813}{TensorFlow Developer Certificate}\\[1pt]}
+{}
+{Demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems (Computer vision, timeseries and NLP).}
+
+% \vfill\null
+\cvsection{SKILLS}
+
+\cvskill{Python} {4+ yrs} {0.95} \\[-2pt]
+\cvskill{C/C++} {3+ yrs} {0.7} \\[-2pt]
+\cvskill{Java} {3+ yrs} {0.7} \\[-2pt]
+\cvskill{Linux} {3+ yrs} {0.6} \\[-2pt]
+\cvskill{GIT} {3+ yrs} {0.6} \\[-2pt]
+\cvskill{Vim} {2+ yrs} {0.6} \\[-2pt]
+\cvskill{Go} {1+ yrs} {0.5} \\[-2pt]
+\begin{center}
+    \vspace{-1em}
+    \tiny{non-exhaustive list...}
+\end{center}
+
+
+
+% \newpage
+% \mbox{} % hotfix to place qrcode on the bottom when there are not other elements
+% \vfill
+% \cvqrcode{}
+
+\end{leftcolumn}
+\begin{rightcolumn}
+%---------------------------------------------------------------------------------------
+%	TITLE  HEADER
+%----------------------------------------------------------------------------------------
+\fcolorbox{white}{darkcol}{\begin{minipage}[c][3.5cm][c]{1\mpwidth}
+	\begin {center}
+		\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ROMAIN GRAUX} } } } \\[-24pt]
+		\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
+		\large{ \textcolor{white} {Data Science/Cryptography student} }
+	\end {center}
+\end{minipage}} \\[14pt]
+\vspace{-12pt}
+
+%---------------------------------------------------------------------------------------
+%	PROFILE
+%----------------------------------------------------------------------------------------
+% \vfill\null
+\cvsection{PROFILE}
+
+\cvtext{
+    % Facts
+    I'm a young student of $22$ years old in last year of master in Data Science at EPFL. Initially made in Belgium, I moved to Switzerland in September $2021$ in order to finish my master and explore the landscapes.
+
+
+    \vspace{1em}
+    % Interests
+    I am really interested in many topics such as cybersecurity, artificial intelligence or even computer network. 
+    But this is not an exhaustive list, I am always hungry to learn and be challenged on any topics (even topics far from bits and electricity).
+    % But I am generally interested in anything that is close to bits or electricity and I try to keep myself informed.
+
+    \vspace{1em}
+    During my free time I usually do bike (trial and downhill), water sport (Boat, wakeboard, ski, \dots) or any sport that keeps me in shape (tennis, rowing, swimming, \dots).
+
+    % - learn, challenge, privacy, coffee
+
+    }
+
+%---------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
 \cvsection{EDUCATION}
 
 \cvmetaevent
@@ -422,58 +504,10 @@
 {Institut Saint-Joseph}
 {High School with mathematics (8h/week) and science (7h/week) options; Final thesis on transition to renewable energy.}
 
-\vfill\null
-\cvqrcode{}
-
-%---------------------------------------------------------------------------------------
-%	CERTIFICATION
-%----------------------------------------------------------------------------------------
-\newpage
-\cvsection{CERTIFICATIONS}
-
-\cvmetaevent
-{\href{}{TensorFlow Developer Certificate}}
-{}
-{}
-{\href{https://api.accredible.com/v1/auth/invite?code=2bb71c099a608e617036&credential\_id=326a136c-9842-42ba-a96d-0786c3dba813&url=https\%3A\%2F\%2Fwww.credential.net\%2F326a136c-9842-42ba-a96d-0786c3dba813&ident=cb9f5083f1d1ccd00062f43dfbc55fe72d8f9ae8/}{Certificate issued by the Google Developers Certification network.}}
-
-
-\vfill
-\cvqrcode{}
-
-\newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
-\cvqrcode{}
-
-\end{leftcolumn}
-\begin{rightcolumn}
-%---------------------------------------------------------------------------------------
-%	TITLE  HEADER
-%----------------------------------------------------------------------------------------
-\fcolorbox{white}{darkcol}{\begin{minipage}[c][3.5cm][c]{1\mpwidth}
-	\begin {center}
-		\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ROMAIN GRAUX} } } } \\[-24pt]
-		\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
-		\large{ \textcolor{white} {Data Science student} }
-	\end {center}
-\end{minipage}} \\[14pt]
-\vspace{-12pt}
-
-%---------------------------------------------------------------------------------------
-%	PROFILE
-%----------------------------------------------------------------------------------------
-\vfill\null
-\cvsection{PROFILE}
-
-% HERE
-\cvtext{Young student in last year of master in Data Science at EPFL who is hungry to learn and practice.
-
-    }
-
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
+\newpage
 \vfill\null
 \cvsection{EXPERIENCE}
 
@@ -490,15 +524,33 @@
     }}
     {}
 
+\cvevent 
+ 	{Sep 20 - Jun 21}
+    {Teaching Assistant}
+    {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
+    {
+        I gave practice sessions to students (between 20 and 50 per session) for 5 different courses:
+        \cvlist{
+        \item \makecolorbox{LINFO1121} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-linfo1121}{Algorithmique et structures de données}
+        \item \makecolorbox{LEPL1108} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1108}{Mathématiques discrètes et probabilité}
+        \item \makecolorbox{LEPL1104} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1104}{Méthodes numériques}
+        \item \makecolorbox{LEPL1106} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1106}{Signaux et Sytèmes}
+        \item \makecolorbox{LEPL1401} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1401}{Informatique 1}
+        }
+    }   
+	{}
+	{}
+	{}
+
 \cvevent
 	{Aug 20 - Sep 20}
-	{Machine Learning Internship}
+	{Computer Vision Internship}
 	{\href{https://www.aerospacelab.be/}{Aeorspacelab}}
-    {Joined a team of machine learning engineers for one month internship at \href{https://www.aerospacelab.be/}{Aeorspacelab} making CompuRecoveringter Vision models, data cleaning and web scraping concerning satellite images and location informations.}
+    {Joined a team of machine learning engineers for one month internship at \href{https://www.aerospacelab.be/}{Aeorspacelab} building Computer Vision models, data cleaning and web scraping concerning satellite images and location informations.}
 	{\cvlist{
-        \item Building segmentation models for detection (Mask-RCNN, Random Forests, ...).
-		\item Recovering location information thanks to OpenSreetMap.
-		\item Data cleaning once OpenSreetMap information gathered.
+        \item Building segmentation models for detection and area computing (Mask-RCNN, Random Forests, ...).
+		\item Recovering location information thanks to OpenStreetMap.
+		\item Data cleaning once OpenStreetMap information gathered.
 	}}
 	{\cvlist {
         \item PyTorch, Scikit-Learn, Numpy for computer vision models.
@@ -506,6 +558,32 @@
 	}}
 	{}
 
+\cvevent
+	{Aug 19 - Sep 19}
+	{Automative Expertise Trainee}
+	{\href{https://experts-partners.org}{Experts Partners}}
+    {
+    Working with an automotive Senior Expert in the field and records encoding back in the office.
+    }
+	{}
+	{}
+	{}
+
+\cvevent 
+ 	{Sep 18 - Aug 19}
+    {Project Student}
+    {\href{https://afdimpact.org}{Academics For Development}}
+    {
+        Fundraising, design and building of a water pump powered by solar energy in a village (Edouwossikopé) in Togo.
+         \cvlist{
+             \item \makecolorbox{Sep 18 - Jun 19} Fundraising, search for material sponsors and theoretical building of the water pump.
+             \item \makecolorbox{Jul 19 - Aug 19} Practical building of the supporting structure and pump in the village.
+         }
+         More information about the project : \url{https://afdimpact.org/projectname/p\_lln\_1819\_odeah\_togo/}
+    }   
+	{}
+	{}
+	{}
 
 % hotfixes to create fake-space to ensure the whole height is used
 \mbox{}
