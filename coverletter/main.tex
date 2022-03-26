@@ -382,86 +382,23 @@
 %
 %
 %============================================================================%
+\usepackage{changepage}
+
+\newcommand*\positive{\item[\icon{Plus}{4}{black}]}
+\newcommand*\negative{\item[\icon{Minus}{4}{black}]}
+
 \begin{document}
 % \columnratio{0.3}
 \columnratio{0.27}
 \setlength{\columnsep}{2.2em}
 \setlength{\columnseprule}{4pt}
-\colseprulecolor{lightcol}
+\colseprulecolor{white}
 \begin{paracol}{2}
 \begin{leftcolumn}
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\includegraphics[width=\linewidth]{resources/imgs/profile0.png}	%trimming relative to image size
-
-%---------------------------------------------------------------------------------------
-%	META SKILLS
-%----------------------------------------------------------------------------------------
-\cvsection{PERSONAL}
-	
-\iconhref{BirthdayCake}{12}{14th August 1999}{}{black}\\[6pt]
-% \iconhref{MapMarker}{12}{Buisson Ponsin 10,\\ 6800 Libramont-Chevigny,\\ Belgium}{https://www.openstreetmap.org/way/945440098\#map=18/49.90597/5.40513}{black}\\[6pt]
-\iconhref{MapMarker}{12}{Route Neuve 3,\\1024 Ecublens (VD),\\Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
-\iconhref{MobilePhone}{12}{+41 78 231 14 77}{tel:+41782311477}{black}\\[6pt]
-% \iconemail{Envelope}{12}{graux.romain@protonmail.com}{graux.romain@protonmail.com}{black}\\[6pt]
-\iconemail{Envelope}{12}{romain.graux@epfl.ch}{romain.graux@epfl.ch}{black}\\[6pt]
-
-\cvsection{LANGUAGES}
-
-\cvlanguage{French} {Native} {1.0} \\[-2pt]
-\cvlanguage{English} {Fluent} {0.9} \\[-2pt]
-
-
-% \vfill\null
-\cvsection{LINKS}
-
-\iconhref{Github}{12}{RomainGrx}{https://github.com/RomainGrx}{black}\\[6pt]
-\iconhref{Linkedin}{12}{romaingraux}{https://www.linkedin.com/in/romaingraux/}{black}\\[6pt]
-
-% \vfill\null
-\cvsection{LICENSES}
-
-\iconhref{Car}{12}{B, BE}{}{black}\\[6pt]
-\iconhref{Anchor}{12}{ICC (inland and coast, motor and sail)}{}{black}\\[6pt]
-
-\vfill\null
-\cvqrcode{}
-
-%---------------------------------------------------------------------------------------
-%	CERTIFICATION
-%----------------------------------------------------------------------------------------
-\newpage
-\vfill\null
-\cvsection{CERTIFICATIONS}
-
-\cvmetaevent
-{Jul 2020 - Jul 2023}
-{\href{https://www.credential.net/326a136c-9842-42ba-a96d-0786c3dba813}{TensorFlow Developer Certificate}\\[1pt]}
-{}
-{Demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems (Computer vision, timeseries and NLP).}
-
-% \vfill\null
-\cvsection{SKILLS}
-
-\cvskill{Python} {4+ yrs} {0.95} \\[-2pt]
-\cvskill{C/C++} {3+ yrs} {0.7} \\[-2pt]
-\cvskill{Java} {3+ yrs} {0.7} \\[-2pt]
-\cvskill{Linux} {3+ yrs} {0.6} \\[-2pt]
-\cvskill{GIT} {3+ yrs} {0.6} \\[-2pt]
-\cvskill{Vim} {2+ yrs} {0.6} \\[-2pt]
-\cvskill{Go} {1+ yrs} {0.5} \\[-2pt]
-\begin{center}
-    \vspace{-1em}
-    \tiny{non-exhaustive list...}
-\end{center}
-
-
-
-% \newpage
-% \mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-% \vfill
-% \cvqrcode{}
+\includegraphics[width=\linewidth]{../resources/imgs/profile0.png}	%trimming relative to image size
 
 \end{leftcolumn}
 \begin{rightcolumn}
@@ -477,146 +414,44 @@
 \end{minipage}} \\[14pt]
 \vspace{-12pt}
 
-%---------------------------------------------------------------------------------------
-%	PROFILE
-%----------------------------------------------------------------------------------------
-% \vfill\null
-\cvsection{PROFILE}
-
-\cvtext{
-    % Facts
-    I'm a young student of $22$ years old in last year of master in Data Science at EPFL. Initially made in Belgium, I moved to Switzerland in September $2021$ in order to finish my master and explore the landscapes.
-
-
-    \vspace{1em}
-    % Interests
-    I am really interested in many topics such as cybersecurity, artificial intelligence or even computer network. 
-    But this is not an exhaustive list, I am always hungry to learn and be challenged on any topics (even topics far from bits and electricity).
-
-    \vspace{1em}
-    % Free time
-    During my free time I usually do bike (trial and downhill), water sport (Boat, wakeboard, ski, \dots) or any sport that keeps me in shape (tennis, rowing, swimming, \dots).
-
-    }
-
-%---------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\cvsection{EDUCATION}
-
-\cvmetaevent
-{2021 - 2022}
-{M.S. Data Science Engineering}
-{\href{https://www.epfl.ch}{École Polytechnique Fédérale de Lausanne}}
-{Last year of the Master's degree in Erasmus at EPFL.}
-
-\cvmetaevent
-{2020 - 2022}
-{M.S. Data Science Engineering}
-{\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
-{Master's degree in Data Science with first year realized at Louvain-la-Neuve and second year in Erasmus.}
-
-\cvmetaevent
-{2017 - 2020}
-{B. Sc. Engineering}
-{\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
-{Bachelor degree in Engineering with Computer Science major and Applied Mathematics minor.}
-
-\cvmetaevent
-{2011 - 2017}
-{High School Degree}
-{Institut Saint-Joseph}
-{High School with mathematics (8h/week) and science (7h/week) options; Final thesis on transition to renewable energy.}
-
-%---------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-\newpage
-\vfill\null
-\cvsection{EXPERIENCE}
-
-\cvevent
-    {Sep 19 - Sep 21}
-    {IT \& Knowledge Manager}
-    {\href{https://afdimpact.org/}{Academics For Development}}
-    {In charge of the website development of \href{https://afdimpact.org/}{Academics For Development} and all the team accounts and access. Academics for Development is a non-profit organization founded on social entrepreneurship. Through projects and on-campus events, we strive to give students the opportunity to enrich themselves and have durable social impact.}
-    {}
-    {\cvlist{
-        \item Wordpress for the website development.
-        \item Google Suite for emails and drive access. 
-        \item Slack for in-team communications.
-    }}
-    {}
-
-\cvevent 
- 	{Sep 20 - Jun 21}
-    {Teaching Assistant}
-    {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
-    {
-        I gave practice sessions to students (between 20 and 50 per session) for 5 different courses:
-        \cvlist{
-        \item \makecolorbox{LINFO1121} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-linfo1121}{Algorithmique et structures de données}
-        \item \makecolorbox{LEPL1108} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1108}{Mathématiques discrètes et probabilité}
-        \item \makecolorbox{LEPL1104} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1104}{Méthodes numériques}
-        \item \makecolorbox{LEPL1106} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1106}{Signaux et Sytèmes}
-        \item \makecolorbox{LEPL1401} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1401}{Informatique 1}
-        }
-    }   
-	{}
-	{}
-	{}
-
-\cvevent
-	{Aug 20 - Sep 20}
-	{Computer Vision Internship}
-	{\href{https://www.aerospacelab.be/}{Aeorspacelab}}
-    {Joined a team of machine learning engineers for one month internship at \href{https://www.aerospacelab.be/}{Aeorspacelab} building Computer Vision models, data cleaning and web scraping concerning satellite images and location informations.}
-	{\cvlist{
-        \item Building segmentation models for detection and area computing (Mask-RCNN, Random Forests, ...).
-		\item Recovering location information thanks to OpenStreetMap.
-		\item Data cleaning once OpenStreetMap information gathered.
-	}}
-	{\cvlist {
-        \item PyTorch, Scikit-Learn, Numpy for computer vision models.
-		\item OpenStreetMap API and GeoPandas for location information retrieval.
-	}}
-	{}
-
-\cvevent
-	{Aug 19 - Sep 19}
-	{Automative Expertise Trainee}
-	{\href{https://experts-partners.org}{Experts Partners}}
-    {
-    Working with an automotive Senior Expert in the field and records encoding back in the office.
-    }
-	{}
-	{}
-	{}
-
-\cvevent 
- 	{Sep 18 - Aug 19}
-    {Project Student}
-    {\href{https://afdimpact.org}{Academics For Development}}
-    {
-        Fundraising, design and building of a water pump powered by solar energy in a village (Edouwossikopé) in Togo.
-         \cvlist{
-             \item \makecolorbox{Sep 18 - Jun 19} Fundraising, search for material sponsors and theoretical building of the water pump.
-             \item \makecolorbox{Jul 19 - Aug 19} Practical building of the supporting structure and pump in the village.
-         }
-         More information about the project : \url{https://afdimpact.org/projectname/p\_lln\_1819\_odeah\_togo/}
-    }   
-	{}
-	{}
-	{}
-
-% hotfixes to create fake-space to ensure the whole height is used
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
+\begin{tabular}{p{0.333\columnwidth}p{0.333\columnwidth}p{0.333\columnwidth}}
+\iconhref{BirthdayCake}{12}{14th August 1999}{}{black}
+&\iconemail{Envelope}{12}{romain.graux@epfl.ch}{romain.graux@epfl.ch}{black}
+&\iconhref{Github}{12}{RomainGrx}{https://github.com/RomainGrx}{black}
+\\
+\iconhref{MapMarker}{12}{Ecublens (VD)}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}
+&\iconhref{MobilePhone}{12}{+41 78 231 14 77}{tel:+41782311477}{black}&\iconhref{Linkedin}{12}{romaingraux}{https://www.linkedin.com/in/romaingraux/}{black}
+\\
+\end{tabular}
 \end{rightcolumn}
 \end{paracol}
+
+\vspace{1cm}
+\begin{adjustwidth}{1cm}{1cm}
+\cvsection{Why Picterra?}
+
+As I appreciated my time when I did an internship at Aerospacelab, by direct translation, I assume that Picterra would be a good fit for what I'm searching in a company.
+
+Furthermore, I'm really interested in the space field and computer vision so Picterra seems to be a perfect match between those two fields. 
+
+\cvsection{Codebase I enjoyed working on}
+
+When I did my internship, I worked on a segmentation model and area computing of swimming pools. I studied different models (U-net, Mask-RCNN, GAN, random forests, ...) and how they performed on 3-bands satellite images. I really appreciated studying the different models metrics and how they performed on random pictures. 
+We were also building a website to find the building at a given address and showing if it contained swimming pools and the areas thanks to OpenStreetMap. It was really interesting to mix frontend and backend and visually see the result.
+
+\cvsection{Positive and negative points at work}
+
+\begin{itemize}
+\positive I appreciate when the atmosphere in the team is good and there is cohesion between all employees. By consequence, we can freely exchange our knowledge, laugh together, share afterworks, ...
+\positive +
+
+\negative A stressful environment with a cold atmosphere and only deadlines that make us work makes me feel really unhappy. 
+
+\negative I also don't appreciate working with a lazy teamworker who is always procastinating and don't do the tasks that the team has given him.
+
+\end{itemize}
+\vspace{1pt}
+\tiny{(A coffee machine always makes me happy.)}
+
+\end{adjustwidth}
 \end{document}
