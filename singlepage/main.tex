@@ -305,7 +305,7 @@
 		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
 	 		\textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
 			\textcolor{maincol}{\textbf{#3}} & \\
-		\end{tabular*}\\[8pt]
+		\end{tabular*}\\[2pt]
 	
 		\ifthenelse{\isempty{#4}}{}{
 			\cvtext{#4}\\
@@ -328,9 +328,7 @@
 		\cvtext{\textbf{Achievements include:}}\\
 		{#7}
 	}
-	\vspace{10pt}
-	\vspace{10pt}
-    \vspace{-0.5cm}
+	\vspace{8pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -343,10 +341,10 @@
 % param 3: customer, employer, etc,. (optional)
 % param 4: info text (optional)
 \newcommand{\cvmetaevent}[4] {
-	\textcolor{maincol} {\cvtext{\textbf{\begin{flushleft}#1\end{flushleft}}}}
+	\textcolor{maincol} {\cvtext{\textbf{#1}}}
 
 	\ifthenelse{\isempty{#2}}{}{
-	\textcolor{darkcol} {\cvtext{\textbf{#2}} }
+	    \textcolor{darkcol} {\cvtext{\textbf{#2}} }
 	}
 
 	\ifthenelse{\isempty{#3}}{}{
@@ -356,7 +354,6 @@
 	\ifthenelse{\isempty{#4}}{}{
 	    \cvtext{#4}\\[2pt]
     }
-    \vspace{-0.5cm}
 }
 
 %---------------------------------------------------------------------------------------
@@ -397,7 +394,7 @@
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\includegraphics[width=\linewidth]{../resources/imgs/profile1.png}	%trimming relative to image size
+\includegraphics[width=\linewidth]{../resources/imgs/profile2.jpeg}\\[2pt]	%trimming relative to image size
 
 %---------------------------------------------------------------------------------------
 %	META SKILLS
@@ -406,7 +403,8 @@
 	
 \iconhref{BirthdayCake}{12}{14th August 1999}{}{black}\\[6pt]
 % \iconhref{MapMarker}{12}{Buisson Ponsin 10,\\ 6800 Libramont-Chevigny,\\ Belgium}{https://www.openstreetmap.org/way/945440098\#map=18/49.90597/5.40513}{black}\\[6pt]
-\iconhref{MapMarker}{12}{Route Neuve 3,\\1024 Ecublens (VD),\\Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
+% \iconhref{MapMarker}{12}{Route Neuve 3,\\1024 Ecublens (VD),\\Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
+\iconhref{MapMarker}{12}{Lausanne, Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
 \iconhref{MobilePhone}{12}{+41 78 231 14 77}{tel:+41782311477}{black}\\[6pt]
 % \iconemail{Envelope}{12}{graux.romain@protonmail.com}{graux.romain@protonmail.com}{black}\\[6pt]
 \iconemail{Envelope}{12}{romaingrx@duck.com}{romaingrx@duck.com}{black}\\[6pt]
@@ -420,7 +418,8 @@
 % \vfill\null
 \cvsection{LINKS}
 
-\iconhref{Github}{12}{RomainGrx}{https://github.com/RomainGrx}{black}\\[6pt]
+\iconhref{Terminal}{12}{romaingraux.xyz}{https://romaingraux.xyz}{black}\\[6pt]
+\iconhref{Github}{12}{romaingrx}{https://github.com/romaingrx}{black}\\[6pt]
 \iconhref{Linkedin}{12}{romaingraux}{https://www.linkedin.com/in/romaingraux/}{black}\\[6pt]
 
 % \vfill\null
@@ -469,6 +468,7 @@
 
 \end{leftcolumn}
 \begin{rightcolumn}
+\vfill\null
 %---------------------------------------------------------------------------------------
 %	TITLE  HEADER
 %----------------------------------------------------------------------------------------
@@ -476,7 +476,7 @@
 	\begin {center}
 		\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ROMAIN GRAUX} } } } \\[-24pt]
 		\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
-		\large{ \textcolor{white} {Data Science/Cryptography student} }
+		\large{ \textcolor{white} {Data Science engineer} }
 	\end {center}
 \end{minipage}} \\[14pt]
 \vspace{-12pt}
@@ -508,29 +508,46 @@
 %----------------------------------------------------------------------------------------
 \cvsection{EDUCATION}
 
-\cvmetaevent
-{2021 - 2022}
+\cvevent
+{Sep 21 - Jun 22}
 {M.S. Data Science Engineering}
 {\href{https://www.epfl.ch}{École Polytechnique Fédérale de Lausanne}}
+{One year exchange at EPFL, doing a master thesis on \href{https://github.com/romaingrx/dna-pcc-master-project}{"Point cloud compression for DNA based storage"} and following the courses: 
+    \href{https://edu.epfl.ch/coursebook/en/cryptography-and-security-COM-401}{Cryptography and security}, 
+    \href{https://edu.epfl.ch/coursebook/en/information-security-and-privacy-COM-402}{Information security and privacy},
+    \href{https://edu.epfl.ch/coursebook/en/decentralized-systems-engineering-CS-438}{Decentralized systems} and
+    \href{https://edu.epfl.ch/coursebook/en/eecs-seminar-advanced-topics-in-machine-learning-ENG-704}{Seminar in advanced topics in machine learning},
+.}
+{}
+{}
 {}
 
-\cvmetaevent
-{2020 - 2022}
+\cvevent
+{Sep 20 - Jun 22}
 {M.S. Data Science Engineering}
 {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
+{Master degree in data science with a specialization in cryptography and computer systems.}
+{}
+{}
 {}
 
-\cvmetaevent
-{2017 - 2020}
+\cvevent
+{Sep 17 - Jun 20}
 {B. Sc. Engineering}
 {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
+{Bachelor degree in engineering with a specialization in applied mathematics and computer science. Grade: Cum Laude.}
+{}
+{}
 {}
 
-\cvmetaevent
-{2011 - 2017}
-{High School Degree}
-{Institut Saint-Joseph}
-{}
+% \cvevent
+% {Sep 11 - Jun 17}
+% {High School Degree}
+% {Institut Saint-Joseph}
+% {}
+% {}
+% {}
+% {}
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -542,7 +559,7 @@
     {Sep 19 - Sep 21}
     {IT \& Knowledge Manager}
     {\href{https://afdimpact.org/}{Academics For Development}}
-    {In charge of the website development of \href{https://afdimpact.org/}{Academics For Development} and all the team accounts and access. Academics for Development is a non-profit organization founded on social entrepreneurship. Through projects and on-campus events, we strive to give students the opportunity to enrich themselves and have durable social impact.}
+    {In charge of the website development of \href{https://afdimpact.org/}{Academics For Development} and all the team accounts and access on GSuite and Slack. Academics for Development is a non-profit organization founded on social entrepreneurship. Through projects and on-campus events, they strive to give students the opportunity to enrich themselves and have durable social impact.}
     {}
     {}
     {}
@@ -552,7 +569,12 @@
     {Teaching Assistant}
     {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
     {
-        I gave practice sessions to students (between 20 and 50 per session) for 5 different courses (Algorithmique et structures de données, Mathématiques discrètes et probabilité, Méthodes numériques, Signaux et Sytèmes, Informatique 1/Python).
+        I gave practice sessions to students (between 20 and 50 per session) for the next five courses: 
+        \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-linfo1121}{Algorithmique et structures de données},
+         \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1108}{Mathématiques discrètes et probabilité},
+         \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1104}{Méthodes numériques},
+         \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1106}{Signaux et Sytèmes} and
+         \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1401}{Informatique 1/Python}.
         % \cvlist{
         % \item \makecolorbox{LINFO1121} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-linfo1121}{Algorithmique et structures de données}
         % \item \makecolorbox{LEPL1108} \href{https://sites.uclouvain.be/archives-portail/cdc2020/en-cours-2020-lepl1108}{Mathématiques discrètes et probabilité}
@@ -569,7 +591,7 @@
 	{Aug 20 - Sep 20}
 	{Computer Vision Internship}
 	{\href{https://www.aerospacelab.be/}{Aeorspacelab}}
-    {Joined a team of machine learning engineers for one month internship at \href{https://www.aerospacelab.be/}{Aeorspacelab} building Computer Vision models, data cleaning and web scraping concerning satellite images and location informations.}
+    {Joined a team of machine learning engineers for one month internship at \href{https://www.aerospacelab.be/}{Aeorspacelab} building Computer Vision models (detection, segmentation and area computing), data cleaning and web scraping on satellite images and geolocation informations thanks to OpenStreetMap.}
 	{}
 	{}
 	{}
@@ -598,13 +620,7 @@
 	{}
 
 % hotfixes to create fake-space to ensure the whole height is used
-\mbox{}
 \vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
 \end{rightcolumn}
 \end{paracol}
 \end{document}
