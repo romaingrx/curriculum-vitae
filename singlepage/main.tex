@@ -61,7 +61,6 @@
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
 %\usepackage[thin]{roboto} 
-
 % set font default
 \renewcommand*\familydefault{\sfdefault} 	
 \usepackage[T1]{fontenc}
@@ -127,7 +126,7 @@
 \usepackage[a4paper]{geometry}
 
 % remove all possible margins
-\geometry{top=1cm, bottom=1cm, left=1cm, right=1cm}
+\geometry{top=0.75cm, bottom=0.75cm, left=0.75cm, right=0.75cm}
 
 \usepackage{fancyhdr}
 \pagestyle{empty}
@@ -236,7 +235,7 @@
 	\vspace{5pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
-		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
+        \textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\[-2pt]
 	}
 }
 
@@ -302,8 +301,8 @@
 	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
 	% if you need more control on page breaks, remove the parbox
 	\parbox{\mpwidth}{
-		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
-	 		\textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
+		\begin{tabular*}{1\mpwidth}{l@{\extracolsep{\fill}}r}
+            \textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[\widthof{#1}]{\textcolor{white}{#1}}} \\
 			\textcolor{maincol}{\textbf{#3}} & \\
 		\end{tabular*}\\[2pt]
 	
@@ -401,7 +400,7 @@
 %----------------------------------------------------------------------------------------
 \cvsection{PERSONAL}
 	
-\iconhref{BirthdayCake}{12}{14th August 1999}{}{black}\\[6pt]
+% \iconhref{BirthdayCake}{12}{14th August 1999}{}{black}\\[6pt]
 % \iconhref{MapMarker}{12}{Buisson Ponsin 10,\\ 6800 Libramont-Chevigny,\\ Belgium}{https://www.openstreetmap.org/way/945440098\#map=18/49.90597/5.40513}{black}\\[6pt]
 % \iconhref{MapMarker}{12}{Route Neuve 3,\\1024 Ecublens (VD),\\Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
 \iconhref{MapMarker}{12}{Lausanne, Switzerland}{https://www.openstreetmap.org/way/283233106\#map=19/46.52887/6.56117}{black}\\[6pt]
@@ -468,15 +467,14 @@
 
 \end{leftcolumn}
 \begin{rightcolumn}
-\vfill\null
 %---------------------------------------------------------------------------------------
 %	TITLE  HEADER
 %----------------------------------------------------------------------------------------
-\fcolorbox{white}{darkcol}{\begin{minipage}[c][3.5cm][c]{1\mpwidth}
+\fcolorbox{white}{darkcol}{\begin{minipage}[c][2.2cm][c]{1\mpwidth}
 	\begin {center}
-		\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ROMAIN GRAUX} } } } \\[-24pt]
+    \huge{ \textbf{ \textcolor{white}{ \uppercase{ROMAIN GRAUX} } } } \\[-15pt]
 		\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
-		\large{ \textcolor{white} {Data Science engineer} }
+		\large{ \textcolor{white} {Data science engineer} }
 	\end {center}
 \end{minipage}} \\[14pt]
 \vspace{-12pt}
@@ -484,32 +482,22 @@
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-% \vfill\null
-% \cvsection{PROFILE}
-% 
-% \cvtext{
-%     % Facts
-%     I'm a young student of $22$ years old in last year of master in Data Science at EPFL. Initially made in Belgium, I moved to Switzerland in September $2021$ in order to finish my master and explore the landscapes.
-% 
-% 
-%     \vspace{1em}
-%     % Interests
-%     I am really interested in many topics such as cybersecurity, artificial intelligence or even computer network. 
-%     But this is not an exhaustive list, I am always hungry to learn and be challenged on any topics (even topics far from bits and electricity).
-% 
-%     \vspace{1em}
-%     % Free time
-%     During my free time I usually do bike (trial and downhill), water sport (Boat, wakeboard, ski, \dots) or any sport that keeps me in shape (tennis, rowing, swimming, \dots).
-% 
-%     }
+\cvsection{Profile}
+
+\cvtext{
+I’m a young engineer of 22 years old who just graduated from a master in data science at EPL/EPFL. 
+I am looking for my next challenge in artificial intelligence and more specifically in reinforcement learning, computer vision or AI safety. 
+But this is not exhaustive, I am attracted by many fields such as cybersecurity, computer networks and many others.
+}
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+\vfill\null
 \cvsection{EDUCATION}
 
 \cvevent
-{Sep 21 - Jun 22}
+{Sep 2021 - Jul 2022}
 {M.S. Data Science Engineering}
 {\href{https://www.epfl.ch}{École Polytechnique Fédérale de Lausanne}}
 {One year exchange at EPFL, doing a master thesis on \href{https://github.com/romaingrx/dna-pcc-master-project}{"Point cloud compression for DNA based storage"} and following the courses: 
@@ -523,7 +511,7 @@
 {}
 
 \cvevent
-{Sep 20 - Jun 22}
+{Sep 2020 - Jul 2022}
 {M.S. Data Science Engineering}
 {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
 {Master degree in data science with a specialization in cryptography and computer systems.}
@@ -532,7 +520,7 @@
 {}
 
 \cvevent
-{Sep 17 - Jun 20}
+{Sep 2017 - Jun 2020}
 {B. Sc. Engineering}
 {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
 {Bachelor degree in engineering with a specialization in applied mathematics and computer science. Grade: Cum Laude.}
@@ -556,7 +544,7 @@
 \cvsection{EXPERIENCE}
 
 \cvevent
-    {Sep 19 - Sep 21}
+    {Sep 2019 - Sep 2021}
     {IT \& Knowledge Manager}
     {\href{https://afdimpact.org/}{Academics For Development}}
     {In charge of the website development of \href{https://afdimpact.org/}{Academics For Development} and all the team accounts and access on GSuite and Slack. Academics for Development is a non-profit organization founded on social entrepreneurship. Through projects and on-campus events, they strive to give students the opportunity to enrich themselves and have durable social impact.}
@@ -565,7 +553,7 @@
     {}
 
 \cvevent 
- 	{Sep 20 - Jun 21}
+ 	{Sep 2020 - Jun 2021}
     {Teaching Assistant}
     {\href{https://uclouvain.be/en/faculties/epl}{École Polytechnique de Louvain}}
     {
@@ -588,7 +576,7 @@
 	{}
 
 \cvevent
-	{Aug 20 - Sep 20}
+	{Aug 2020 - Sep 2020}
 	{Computer Vision Internship}
 	{\href{https://www.aerospacelab.be/}{Aeorspacelab}}
     {Joined a team of machine learning engineers for one month internship at \href{https://www.aerospacelab.be/}{Aeorspacelab} building Computer Vision models (detection, segmentation and area computing), data cleaning and web scraping on satellite images and geolocation informations thanks to OpenStreetMap.}
@@ -608,7 +596,7 @@
 % 	{}
 
 \cvevent 
- 	{Sep 18 - Aug 19}
+ 	{Sep 2018 - Aug 2019}
     {Project Student}
     {\href{https://afdimpact.org}{Academics For Development}}
     {
